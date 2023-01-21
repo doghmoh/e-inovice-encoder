@@ -8,7 +8,7 @@ this is a simple example :
 
    1/ import the library below to use the  function getTLVForValue().
    <script src="Jsbase64.qrCode.js"></script> 
-   2/ use the code below to generate base64 code :
+   2/ use the code below to generate base64 code (just edit the second argument in function getTLVForValue()) :
    
         var SellerName = getTLVForValue("1", "doghmoh");  
         var VATRegistrationNumber = getTLVForValue("2", "312345678912343");
@@ -18,15 +18,10 @@ this is a simple example :
 
         var bufsArray = SellerName + VATRegistrationNumber + TimeStamp + InvoiceTotal + VATTotal;
 
-        var qrCode64 = hexToBase64(bufsArray)
+        var qrCode64 = hexToBase64(bufsArray)  // you should put this variable in QR generator.
 
-  3/ use the library below to create a QR code  :
-    <script src="jquery.min.js"></script>
-    <script src="qrcode.js"></script>
-    <script src="qrcode.min.js"></script>
-  
-        $(document).ready(function() {
-            new QRCode("qrcode", qrCode64);
-        })
+  3/ use any QR generator to  create a QR code.
+
+        
         
        
