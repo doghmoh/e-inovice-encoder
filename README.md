@@ -1,4 +1,4 @@
-# E-Invoice Saudi Arabia QR Code Encoder
+# E-Invoice (Fatoorah) Saudi Arabia QR Code Encoder
 
 This JavaScript library encodes seller data in the format required by E-Invoice systems in Saudi Arabia into a QR code. It generates a QR code that can be scanned by E-Invoice systems for processing and verification.
 
